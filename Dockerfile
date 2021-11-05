@@ -23,4 +23,4 @@ RUN apk add --no-cache tzdata git composer && \
 
 EXPOSE $PORT
 
-CMD ["su", "olaindex", "-c", "php artisan serve --host=top-protest-production.up.railway.app --port=$PORT --tries=0 --no-interaction"]
+CMD ["su", "olaindex", "-c", "php artisan serve --host=0.0.0.0 --port=$PORT --tries=0 --no-interaction"]
