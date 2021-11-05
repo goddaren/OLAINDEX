@@ -23,6 +23,6 @@ RUN apk add --no-cache tzdata git composer && \
 
 EXPOSE $PORT
 
-CMD ["su", "olaindex", "-c","php artisan key:generate"]
-CMD ["su", "olaindex", "-c","php artisan migrate --seed"]
+CMD ["php artisan key:generate"]
+CMD ["php artisan migrate --seed"]
 CMD ["su", "olaindex", "-c", "php artisan serve --host=0.0.0.0 --port=$PORT --tries=0 --no-interaction"]
