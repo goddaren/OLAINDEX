@@ -21,6 +21,6 @@ RUN apk add --no-cache tzdata git composer && \
     chown -R olaindex:olaindex /OLAINDEX && \
     chmod 755 /OLAINDEX/storage
 
-EXPOSE PORT
+EXPOSE $PORT
 
 CMD ["su", "olaindex", "-c", "php artisan serve --host=top-protest-production.up.railway.app --port=PORT --tries=0 --no-interaction"]
