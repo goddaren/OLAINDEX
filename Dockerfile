@@ -13,7 +13,7 @@ RUN apk add --no-cache tzdata git composer && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     apk del tzdata && \
     docker-php-ext-install bcmath && \
-    git clone --depth 1 https://github.com/WangNingkai/OLAINDEX.git . && \
+    git clone --depth 1 https://github.com/goddaren/OLAINDEX.git . && \
     composer install -vvv && \
     composer run install-app && \
     addgroup -g 900 -S olaindex && \
