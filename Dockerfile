@@ -1,3 +1,5 @@
+FROM php:7-cli-alpine
+
 LABEL maintainer.name="xczh" \
       maintainer.email="xczh.me@foxmail.com" \
       maintainer.description="OLAINDEX: Another OneDrive Directory Index"
