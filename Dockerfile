@@ -6,7 +6,7 @@ LABEL maintainer.name="xczh" \
 
 ENV LANG=C.UTF-8
 
-WORKDIR /OLAINDEX
+WORKDIR ./
 
 RUN docker-php-ext-install bcmath && \
     composer install -vvv && \
